@@ -66,7 +66,6 @@ bot.on("message", message => {
                 sent.react(mapObj[1]);  
                  
             });
-        }
     }
 })
 
