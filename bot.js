@@ -4,8 +4,8 @@ const verifyCMD = "!rolle"
 const intCMD = "!interessen"
 
 let initialMessage = `**Akzeptieren der Regeln**`;
-const roles = ["Mitglied","Putzfrau"];
-const reactions = ["✅","✅"];
+const roles = ["Putzfrau","Logo","Intro"];
+const reactions = ["✅","✅","✅"];
 const Discord = require('discord.js');
 
 //Bot starten... // Status setzen...
