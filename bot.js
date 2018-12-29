@@ -35,7 +35,7 @@ bot.on('ready', () => {
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(bot.emojis.get("305818615712579584") + `\:528605335636672512: Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(client.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
