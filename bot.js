@@ -1,10 +1,11 @@
 //Settings!
 const yourID = "527639184941383680";
 const verifyCMD = "!rolle"
+const intCMD = "!interessen"
 
 let initialMessage = `**Akzeptieren der Regeln**`;
-const roles = ["Mitglied"];
-const reactions = ["✅"];
+const roles = ["Mitglied","Putzfrau"];
+const reactions = ["✅","✅"];
 const Discord = require('discord.js');
 
 //Bot starten... // Status setzen...
@@ -40,7 +41,7 @@ function generateMessages(){
 
 
 bot.on("message", message => {
-    if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
+    if (message.author.id == yourID && message.content.toLowerCase() == intCMD){
         var toSend = generateMessages();
         let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions[idx]])];
         for (let mapObj of mappedArray){
