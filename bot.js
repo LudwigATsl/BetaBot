@@ -64,7 +64,7 @@ bot.on("message", message => {
         var toSend = "Reagiere mit EMOJIER ALTAA auf diese Nachricht um Freigeschalten zu werden";
         message.channel.send(toSend).then( sent => {
                   sent.react("✅");  
-                } 
+                }) 
             });
         }
     }
