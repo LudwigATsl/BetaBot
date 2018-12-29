@@ -55,6 +55,40 @@ bot.on("message", message => {
 })
 
 
+bot.on('raw', event => {
+    if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE"){
+        
+        let channel = bot.channels.get(event.d.channel_id);
+        let message = channel.fetchMessage(event.d.message_id).then(msg=> {
+        let user = msg.guild.members.get(event.d.user_id);
+        
+        if (msg.author.id == bot.user.id && msg.content != initialMessage){
+       
+            var re = `\\*\\*"(.+)?(?="\\*\\*)`;
+            var role = msg.content.match(re)[1];
+        
+            if (user.id != bot.user.id){
+                var roleObj = msg.guild.roles.find(Mitglied);
+                var memberObj = msg.guild.members.get(user.id);
+                
+                if (event.t === "MESSAGE_REACTION_ADD"){
+                    memberObj.addRole(roleObj)
+                } else {
+                    memberObj.removeRole(roleObj);
+                }
+            }
+        }
+        })
+ 
+    }   
+});
+
+
+
+
+
+
+
 
 
 //Generieren, Absenden und reagieren der Regel Bestätigungs Nachricht
@@ -68,10 +102,6 @@ bot.on("message", message => {
             });
     }
 })
-
-
-
-
 
 
 bot.on('raw', event => {
@@ -101,6 +131,10 @@ bot.on('raw', event => {
  
     }   
 });
+
+
+
+
 
     bot.on('guildMemberAdd', member => {
         member.send("Herzlich Wilkommen auf dem **Schriftlage Community Server** !\n\nBitte halte dich an die vorgeführten Chatregeln, du findest sie unter `#regeln`.\nInformationen über uns und den Server erfährst du im Kanal  `#info`.\nBleib auf dem laufenden und schau ab und zu mal hier rein: `#ankündigungenen-und-updates`.\n\nSchalte dich auf dem Server frei, indem du die in `#regeln` aufgeführten Regeln akzeptierst.\n\nWir hoffen du genießt deinen Aufenhalt!");
