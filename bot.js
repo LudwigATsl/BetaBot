@@ -55,6 +55,29 @@ bot.on("message", message => {
 })
 
 
+
+
+//Generieren, Absenden und reagieren der Regel Bestätigungs Nachricht
+
+bot.on("message", message => {
+    if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
+        var toSend = "Reagiere mit EMOJIER ALTAA auf diese Nachricht um Freigeschalten zu werden";
+        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions[idx]])];
+        for (let mapObj of mappedArray){
+            message.channel.send(mapObj[0]).then( sent => {
+                if (mapObj[1]){
+                  sent.react(mapObj[1]);  
+                } 
+            });
+        }
+    }
+})
+
+
+
+
+
+
 bot.on('raw', event => {
     if (event.t === 'MESSAGE_REACTION_ADD' || event.t == "MESSAGE_REACTION_REMOVE"){
         
