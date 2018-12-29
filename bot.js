@@ -43,7 +43,7 @@ bot.on('ready', () => {
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(bot.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`<528605335636672512> Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
@@ -98,7 +98,7 @@ bot.on('raw', event => {
 function VgenerateMessages(){
     var messages = [];
     messages.push(VinitialMessage);
-    for (let role of Vroles) messages.push(`Durch das Reagieren mit "✅" auf diese Nachricht, akzeptierst du die Server Regeln und erhältst die Rolle **"${role}"**`); //DONT CHANGE THIS
+    for (let role of Vroles) messages.push(`Durch das Reagieren mit ✅ auf diese Nachricht, akzeptierst du die Server Regeln und erhältst die Rolle **"${role}"**`); //DONT CHANGE THIS
     return messages;
 }
 
