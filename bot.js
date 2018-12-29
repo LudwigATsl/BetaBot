@@ -92,7 +92,7 @@ bot.on('raw', event => {
 
 //Generieren, Absenden und reagieren der Regel Bestätigungs Nachricht
 
-function generateMessages(){
+function VgenerateMessages(){
     var messages = [];
     messages.push(VinitialMessage);
     for (let Vrole of Vroles) messages.push(bot.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${Vrole}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
@@ -102,7 +102,7 @@ function generateMessages(){
 
 bot.on("message", message => {
     if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
-        var toSend = generateMessages();
+        var toSend = VgenerateMessages();
         let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, Vreactions[idx]])];
         for (let mapObj of mappedArray){
             message.channel.send(mapObj[0]).then( sent => {
