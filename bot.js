@@ -3,10 +3,12 @@ const yourID = "527639184941383680";
 const verifyCMD = "!rolle"
 const intCMD = "!interessen"
 
+//Interessenrollen(Veränderbar)
 let initialMessage = `**Wähle deine Interessenrollen**`;
 const roles = ["Putzfrau","Logo","Intro"];
 const reactions = ["✅","✅","✅"];
 
+//Mitglieds zuweisung nach akzeptieren der Regeln ( NICHT VERÄNDERN )
 let VinitialMessage = `**Akzeptieren der Regeln**`;
 const Vroles = ["Mitglied"];
 const Vreactions = ["✅"];
@@ -74,7 +76,7 @@ bot.on('raw', event => {
             var role = msg.content.match(re)[1];
         
             if (user.id != bot.user.id){
-                var roleObj = msg.guild.roles.find(Mitglied);
+                var roleObj = msg.guild.roles.find(r => r.name === role);
                 var memberObj = msg.guild.members.get(user.id);
                 
                 if (event.t === "MESSAGE_REACTION_ADD"){
@@ -90,12 +92,13 @@ bot.on('raw', event => {
 });
 
 
+
 //Generieren, Absenden und reagieren der Regel Bestätigungs Nachricht
 
 function VgenerateMessages(){
     var messages = [];
     messages.push(VinitialMessage);
-    for (let Vrole of Vroles) messages.push(bot.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${Vrole}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of Vroles) messages.push(bot.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
