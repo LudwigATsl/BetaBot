@@ -31,11 +31,11 @@ bot.on('ready', () => {
 
 
 
-//Function to generate the role messages, based on your settings
+//Hier werden die Nachrichten zum Abbonierten der Rolle erstellt. Basierend auf den oben eigetragenen Werten.
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`Durch das Reagieren mit :white_check_mark:  auf diese Nachricht, akzeptierst du die Serverregeln, wirst freigeschaltet und erhältst die Rolle **"${role}"**!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`:SL: Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
