@@ -5,8 +5,8 @@ const intCMD = "!interessen"
 
 //Interessenrollen(Veränderbar)
 let initialMessage = `**Wähle deine Interessenrollen**`;
-const roles = ["Putzfrau","Logo","Intro"];
-const reactions = ["✅","✅","✅"];
+const roles = ["Digital","Film","Print","CGI","Entwicklung"];
+const reactions = ["😄","💨","🤣","⛽","✨"];
 
 //Mitglieds zuweisung nach akzeptieren der Regeln ( NICHT VERÄNDERN )
 let VinitialMessage = `**Akzeptieren der Regeln**`;
