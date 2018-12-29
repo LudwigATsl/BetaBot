@@ -95,13 +95,13 @@ bot.on('raw', event => {
 function generateMessages(){
     var messages = [];
     messages.push(VinitialMessage);
-    for (let role of Vroles) messages.push(bot.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let Vrole of Vroles) messages.push(bot.emojis.get("528605335636672512") + `528605335636672512 Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
 
 bot.on("message", message => {
-    if (message.author.id == yourID && message.content.toLowerCase() == intCMD){
+    if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
         var toSend = generateMessages();
         let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, Vreactions[idx]])];
         for (let mapObj of mappedArray){
