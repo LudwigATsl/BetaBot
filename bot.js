@@ -1,6 +1,7 @@
 //Settings!
 const yourID = "527639184941383680";
-const setupCMD = "!rolle"
+const verifyCMD = "!rolle"
+
 let initialMessage = `**Akzeptieren der Regeln**`;
 const roles = ["Mitglied"];
 const reactions = ["✅"];
@@ -39,7 +40,7 @@ function generateMessages(){
 
 
 bot.on("message", message => {
-    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD){
+    if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
         var toSend = generateMessages();
         let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions[idx]])];
         for (let mapObj of mappedArray){
