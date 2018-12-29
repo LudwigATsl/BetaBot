@@ -62,8 +62,8 @@ bot.on("message", message => {
 bot.on("message", message => {
     if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
         var toSend = "Reagiere mit EMOJIER ALTAA auf diese Nachricht um Freigeschalten zu werden";
-        message.channel.send(toSend[0]).then( sent => {
-                sent.react(mapObj[1]);  
+        message.channel.send(toSend).then( sent => {
+                sent.react("✅");  
                  
             });
     }
