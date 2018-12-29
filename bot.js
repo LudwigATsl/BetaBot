@@ -31,11 +31,11 @@ bot.on('ready', () => {
 
 
 
-//Hier werden die Nachrichten zum Abbonierten der Rolle erstellt. Basierend auf den oben eigetragenen Werten.
+//Hier werden die Nachrichten zum Abbonierten der Interessenrollen erstellt. Basierend auf den oben eigetragenen Werten.
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(client.emojis.get("305818615712579584") + `\:528605335636672512: Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(bot.emojis.get("305818615712579584") + `\:528605335636672512: Abboniere das Interessengebiet **"${role}"** durch einen klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
