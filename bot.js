@@ -143,7 +143,7 @@ var FilmEmbed = new Discord.RichEmbed()
 var PrintEmbed = new Discord.RichEmbed()
 .setColor("#30cd50")
 .setThumbnail("https://i.imgur.com/muHCwlC.png")
-.addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den :SCHRIFTLAGEICON: - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!, true)
+.addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den :SCHRIFTLAGEICON: - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!", true)
         
 var CGIEmbed = new Discord.RichEmbed() 
 .setColor("#cd333f")
