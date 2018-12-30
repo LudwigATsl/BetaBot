@@ -131,28 +131,28 @@ bot.on("message", message => {
     
 var DigitalEmbed = new Discord.RichEmbed()
 .setColor("#f1c41e")
-.setThumbnail("https://i.imgur.com/K9xW5B4.png")
+.setThumbnail("https://i.imgur.com/pf64hdz.png")
 .addField("Digital", "das kann ich für dich tun", true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
 .setColor("#37f1c6")
-.setThumbnail("https://i.imgur.com/dciXn7h.png")
+.setThumbnail("https://i.imgur.com/KRnPBLG.png")
 .addField("Film", "das kann ich für dich tun", true)
 
 var PrintEmbed = new Discord.RichEmbed()
 .setColor("#30cd50")
-.setThumbnail("https://i.imgur.com/meRRm5R.png")
+.setThumbnail("https://i.imgur.com/muHCwlC.png")
 .addField("Print", "das kann ich für dich tun", true)
         
-var CGIEmbed = new Discord.RichEmbed()
+var CGIEmbed = new Discord.RichEmbed() 
 .setColor("#cd333f")
-.setThumbnail("https://i.imgur.com/sGoJM2Y.png")
+.setThumbnail("https://i.imgur.com/A8HFZCT.png")
 .addField("CGI", "das kann ich für dich tun", true)
         
 var EntwicklungEmbed = new Discord.RichEmbed()
 .setColor("#9159b6")
-.setThumbnail("https://i.imgur.com/PmeG7m4.png")
+.setThumbnail("https://i.imgur.com/nNQc9En.png")
 .addField("Entwicklung", "das kann ich für dich tun", true)
 
 
