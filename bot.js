@@ -6,7 +6,7 @@ const intCMD = "!interessen"
 //Interessenrollen(Veränderbar)
 let initialMessage = `**Wähle deine Interessenrollen**`;
 const roles = ["Digital","Film","Print","CGI","Entwicklung"];
-const reactions = ["😄","💨","🤣","⛽","✨"];
+const reactions = [":Digital:528686778895433729",":Film:528686778966736926",":Print:528686779423916073",":CGI:528686778782056468",":Entwicklung:528686778933051402"];
 
 //Mitglieds zuweisung nach akzeptieren der Regeln ( NICHT VERÄNDERN )
 let VinitialMessage = `**Akzeptieren der Regeln**`;
@@ -43,7 +43,7 @@ bot.on('ready', () => {
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`Abboniere das <:SL:528604903094878209> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`---\nAbboniere das <:SL:527796195280551936> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
@@ -129,12 +129,59 @@ bot.on("message", message => {
         member.send(social);
 });
     
+var DigitalEmbed = new Discord.RichEmbed()
+.setColor("#f1c41e")
+.setThumbnail("https://i.imgur.com/K9xW5B4.png")
+.addField("Digital", "das kann ich für dich tun", true)
+            
+        
+var FilmEmbed = new Discord.RichEmbed()
+.setColor("#37f1c6")
+.setThumbnail("https://i.imgur.com/dciXn7h.png")
+.addField("Film", "das kann ich für dich tun", true)
+
+var PrintEmbed = new Discord.RichEmbed()
+.setColor("#30cd50")
+.setThumbnail("https://i.imgur.com/meRRm5R.png")
+.addField("Print", "das kann ich für dich tun", true)
+        
+var CGIEmbed = new Discord.RichEmbed()
+.setColor("#cd333f")
+.setThumbnail("https://i.imgur.com/sGoJM2Y.png")
+.addField("CGI", "das kann ich für dich tun", true)
+        
+var EntwicklungEmbed = new Discord.RichEmbed()
+.setColor("#9159b6")
+.setThumbnail("https://i.imgur.com/PmeG7m4.png")
+.addField("Entwicklung", "das kann ich für dich tun", true)
 
 
 
 
 
 
+
+// Generieren der Interessenrollenvorstellungen
+
+var interessenCMD = "!intr"
+
+bot.on("message", message => {
+    if(message.author.bot === false) {
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über deine ")
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(DigitalEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(FilmEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(PrintEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(CGIEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(EntwicklungEmbed)}
+    }
+ }
+});
 
 
 // Private Interaktionen
