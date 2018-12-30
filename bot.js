@@ -43,7 +43,7 @@ bot.on('ready', () => {
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`_____________\nAbboniere das <:SL:527796195280551936> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`___\nAbboniere das <:SL:527796195280551936> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
@@ -138,12 +138,12 @@ var DigitalEmbed = new Discord.RichEmbed()
 var FilmEmbed = new Discord.RichEmbed()
 .setColor("#37f1c6")
 .setThumbnail("https://i.imgur.com/KRnPBLG.png")
-.addField("Film", "das kann ich für dich tun", true)
+.addField("Film & Foto", "das kann ich für dich tun", true)
 
 var PrintEmbed = new Discord.RichEmbed()
 .setColor("#30cd50")
 .setThumbnail("https://i.imgur.com/muHCwlC.png")
-.addField("Print", "das kann ich für dich tun", true)
+.addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den :SCHRIFTLAGEICON: - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!, true)
         
 var CGIEmbed = new Discord.RichEmbed() 
 .setColor("#cd333f")
