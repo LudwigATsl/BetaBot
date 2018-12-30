@@ -153,7 +153,7 @@ var CGIEmbed = new Discord.RichEmbed()
 var EntwicklungEmbed = new Discord.RichEmbed()
 .setColor("#9159b6")
 .setThumbnail("https://i.imgur.com/nNQc9En.png")
-.addField("Entwicklung", "das kann ich für dich tun", true)
+.addField("Entwicklung", "Von Python über C++ bis zur Unreal Engine. Dein Bereich für App, Web, Softwareentwicklung etc.! Zeige uns deine Kreationen und hol dir Tipps und Tricks von anderen Mitgliedern ab!  ", true)
 
 
 
