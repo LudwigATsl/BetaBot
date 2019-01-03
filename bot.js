@@ -130,13 +130,13 @@ bot.on("message", message => {
 });
     
 var DigitalEmbed = new Discord.RichEmbed()
-.setColor("#f1c41e")
+.setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/pf64hdz.png")
 .addField("Digital", "das kann ich für dich tun", true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
-.setColor("#37f1c6")
+.setColor("#7289da")
 .setThumbnail("https://i.imgur.com/KRnPBLG.png")
 .addField("Film & Foto", "das kann ich für dich tun", true)
 
