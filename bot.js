@@ -131,28 +131,28 @@ bot.on("message", message => {
     
 var DigitalEmbed = new Discord.RichEmbed()
 .setColor("#FFFFFF")
-.setThumbnail("https://i.imgur.com/pf64hdz.png")
+.setThumbnail("https://i.imgur.com/K9xW5B4.png")
 .addField("Digital", "das kann ich für dich tun", true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
-.setColor("#7289da")
-.setThumbnail("https://i.imgur.com/KRnPBLG.png")
+.setColor("#FFFFFF")
+.setThumbnail("https://i.imgur.com/dciXn7h.png")
 .addField("Film & Foto", "das kann ich für dich tun", true)
 
 var PrintEmbed = new Discord.RichEmbed()
-.setColor("#30cd50")
-.setThumbnail("https://i.imgur.com/muHCwlC.png")
+.setColor("#FFFFFF")
+.setThumbnail("https://i.imgur.com/meRRm5R.png")
 .addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den :SCHRIFTLAGEICON: - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!", true)
         
 var CGIEmbed = new Discord.RichEmbed() 
-.setColor("#cd333f")
-.setThumbnail("https://i.imgur.com/A8HFZCT.png")
+.setColor("#FFFFFF")
+.setThumbnail("https://i.imgur.com/sGoJM2Y.png")
 .addField("CGI", "das kann ich für dich tun", true)
         
 var EntwicklungEmbed = new Discord.RichEmbed()
-.setColor("#9159b6")
-.setThumbnail("https://i.imgur.com/nNQc9En.png")
+.setColor("#FFFFFF")
+.setThumbnail("https://i.imgur.com/PmeG7m4.png")
 .addField("Entwicklung", "Von Python über C++ bis zur Unreal Engine. Dein Bereich für App, Web, Softwareentwicklung etc.! Zeige uns deine Kreationen und hol dir Tipps und Tricks von anderen Mitgliedern ab!  ", true)
 
 
