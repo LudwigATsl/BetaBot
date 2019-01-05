@@ -132,7 +132,7 @@ bot.on("message", message => {
 var DigitalEmbed = new Discord.RichEmbed()
 .setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/K9xW5B4.png")
-.addField("Digital", "das kann ich für dich tun", true)
+.addField("Digital","Dein Ort für alles was du nicht in deinen Händen halten kannst. Ob Pixel- oder Vectorgrafik, die Zukunft ist Digital!" true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
