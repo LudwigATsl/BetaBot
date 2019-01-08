@@ -143,7 +143,7 @@ var FilmEmbed = new Discord.RichEmbed()
 var PrintEmbed = new Discord.RichEmbed()
 .setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/meRRm5R.png")
-.addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den <:SL:528604903094878209> - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!", true)
+.addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den <:SL:527796195280551936>> - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!", true)
         
 var CGIEmbed = new Discord.RichEmbed() 
 .setColor("#FFFFFF")
@@ -168,7 +168,7 @@ var interessenCMD = "!intr"
 bot.on("message", message => {
     if(message.author.bot === false) {
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
-            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über bestimmte Themen unterhalten, oder auf dem Laufenden bleiben was wir bei Schriftlage so machen ? Dann solltest du dir die Interessenrollen genauer ansehen!\n\nAbbonierst du eine Interessenrolle, stehen dir neue Textkanäle zur Verfügung, in denen du dich ungestört zu den vorgegebenen Themen unterhalten kannst.\n\nEine Interessenrolle zu abbonieren ist nicht schwer:\n\n**1.** Lies dir die Beschreibungen zu den Interessenrollen aufmerksam durch.\n**2.**Unter dem Block mit den Beschreibungen, findest du das Menü zum Abbonieren. Reagiere nun hier mit dem vorgegebenen Emojie auf die Rollen, die dich interessieren.\n\n**3.** Nun stehen dir alle Funktionen zu deinen Interessenrollen zur Verfügung!\n@here")
+            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über bestimmte Themen unterhalten, oder auf dem Laufenden bleiben, was wir bei Schriftlage so machen ? Dann solltest du dir die Schriftlage - Interessenrollen genauer ansehen!\n\nAbbonierst du eine <:SL:527796195280551936> - Interessenrolle, stehen dir neue Textkanäle zur Verfügung, in denen du dich ungestört zu den vorgegebenen Themen unterhalten kannst.\n\n__**Eine Interessenrolle zu abbonieren ist nicht schwer:**__\n\n**1.** Lies dir die Beschreibungen zu den <:SL:527796195280551936> - Interessenrollen aufmerksam durch.\n\n**2.** Unter dem Block mit den Beschreibungen, findest du das Menü zum Abbonieren. Reagiere nun hier mit dem vorgegebenen Emojie auf die Rollen, die dich interessieren.\n\n**3.** Nun stehen dir alle Funktionen zu deinen <:SL:527796195280551936> - Interessenrollen zur Verfügung!\n@here")
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
             message.channel.send(DigitalEmbed)}
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
