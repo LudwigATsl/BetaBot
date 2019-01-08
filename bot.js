@@ -168,7 +168,7 @@ var interessenCMD = "!intr"
 bot.on("message", message => {
     if(message.author.bot === false) {
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
-            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über deine ")
+            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über bestimmte Themen unterhalten, oder auf dem Laufenden bleiben was wir bei Schriftlage so machen ? Dann solltest du dir die Interessenrollen genauer ansehen!\n\nAbbonierst du eine Interessenrolle, stehen dir neue Textkanäle zur Verfügung, in denen du dich ungestört zu den vorgegebenen Themen unterhalten kannst.\n\nEine Interessenrolle zu abbonieren ist nicht schwer:\n\n**1.** Lies dir die Beschreibungen zu den Interessenrollen aufmerksam durch.\n**2.**Unter dem Block mit den Beschreibungen, findest du das Menü zum Abbonieren. Reagiere nun hier mit dem vorgegebenen Emojie auf die Rollen, die dich interessieren.\n\n**3.** Nun stehen dir alle Funktionen zu deinen Interessenrollen zur Verfügung!\n@here")
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
             message.channel.send(DigitalEmbed)}
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
